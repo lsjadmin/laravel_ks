@@ -56,3 +56,13 @@ Route::get('/mongodb/swoole','Mongo\MongoController@swoole');
 
 
 Route::get('/mongodb/chat','Mongo\MongoController@chat');
+//测试
+Route::get('/test/a','A\AController@a');
+Route::get('/test/b','A\BbController@b');
+//测试分表
+Route::get('/exam/test','Exam\ExamController@test');
+
+Route::get('/exam/pshow','Exam\ExamController@pshow');
+
+Route::get('/exam/partition','Exam\ExamController@partition');//范围分区
+Route::get('/exam/partitionlist','Exam\ExamController@partitionlist');//list分区

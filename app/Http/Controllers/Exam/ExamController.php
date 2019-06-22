@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Str;
 use App\Model\PowerModel;
 use App\Model\PadminModel;
+use Illuminate\Support\Facades\DB;
 class ExamController extends Controller
 {
     //登陆接口
@@ -200,5 +201,58 @@ class ExamController extends Controller
     public function power(){
         echo "a";
     }
+    //测试分表
+    public function test(){
+        $uid=Redis::incr('uid');
+        echo "uid:";echo $uid;echo"</br>";
+        $table=$uid % 5;
+        echo "table:";echo $table;echo"</br>";
+        $info=[
+            'u_id'=>$uid,
+            'u_name'=>Str::random(5),
+            'email'=>rand(5,10).'@qq.com',
+            'addtime'=>time(),
+        ];
+        $tablea='p_user_'.$table;
+        DB::table($tablea)->insertGetId($info);
+    }
+    //查询分表数据
+    public function pshow(){
+        $uid=3;
+        $table=$uid % 5;
+        $tablea='p_user_'.$table;
+        $res=DB::table($tablea)->where(['u_id'=>$uid])->first();
+        var_dump($res);
+    }
+
+    //分区
+    public function partition(){
+        $info=[
+            'id'=>rand(5,10),
+            'fname'=>Str::random(5),
+            'lname'=>Str::random(5),
+            'hired'=>date('Y-m-d'),
+            'separated'=>date('Y-m-d'),
+            'job_code'=>rand(5,10),
+            'store_id'=>mt_rand(1,20)
+        ];
+        DB::table('employees')->insert($info);
+    }
+    //list分区
+    public function partitionlist(){
+        $info=[
+            'id'=>rand(5,10),
+            'fname'=>Str::random(5),
+            'lname'=>Str::random(5),
+            'hired'=>date('Y-m-d'),
+            'separated'=>date('Y-m-d'),
+            'job_code'=>rand(5,10),
+            'store_id'=>mt_rand(1,20)
+        ];
+       $res=DB::table('employeelist')->insert($info);
+        var_dump($res);
+    }
+
+
 
 }
