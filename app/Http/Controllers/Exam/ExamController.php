@@ -10,7 +10,10 @@ use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Str;
 use App\Model\PowerModel;
 use App\Model\PadminModel;
+use App\Model\MysqlModel;
 use Illuminate\Support\Facades\DB;
+use phpDocumentor\Reflection\DocBlock\Tags\Method;
+
 class ExamController extends Controller
 {
     //登陆接口
@@ -252,6 +255,23 @@ class ExamController extends Controller
        $res=DB::table('employeelist')->insert($info);
         var_dump($res);
     }
+    //压力测试 ab
+    public function abtest(){
+
+        echo  __METHOD__;
+    }
+    //测试mysql 主主
+    public function mysql(){
+
+        $info=[
+            'name'=>Str::random(5),
+            'pwd'=>Str::random(5),
+        ];
+        $a=MysqlModel::insert($info);
+        dd($a);
+      
+    }
+
 
 
 

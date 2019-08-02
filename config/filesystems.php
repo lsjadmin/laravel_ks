@@ -55,6 +55,14 @@ return [
             'visibility' => 'public',
         ],
 
+        'upload'=>[
+            'driver' => 'local',
+            //   # 增加配置 [路径可以自定义 storage_path('app/upload') 对应的是 /storage/app/upload ]
+            //# 如果想修改的话  public_path('/uploads') 对应的是 /public下的uploads
+
+            'root'=>public_path('upload'),
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

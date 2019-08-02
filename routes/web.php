@@ -66,3 +66,29 @@ Route::get('/exam/pshow','Exam\ExamController@pshow');
 
 Route::get('/exam/partition','Exam\ExamController@partition');//范围分区
 Route::get('/exam/partitionlist','Exam\ExamController@partitionlist');//list分区
+
+
+//切片上传
+Route::get('/file/a','File\FileController@a');
+
+Route::post('/file/b','File\FileController@b');
+//测试邮箱发送
+Route::get('/email','Email\EmailController@email');
+//测试redis incr
+
+Route::get('/test/abtest','Exam\ExamController@abtest');
+//测试mysql主主
+Route::get('/test/mysql','Exam\ExamController@mysql');
+//发送短信验证码
+Route::get('/note/note','Note\NoteController@note');
+
+//测试表单验证
+Route::get('/verify/test','Verify\VerifyController@test');
+Route::post('/verify/push','Verify\VerifyController@push');  //添加
+
+//队列
+Route::get('/queue/test','Queue\QueueController@queue');  //数据库队列
+Route::get('/queue/redis','Queue\QueueController@queueredis');  //redis队列
+//微信
+Route::get('/wei/token','Weixin\WeiController@token');  //获得token
+Route::get('/wei/mass','Weixin\WeiController@mass');  //群发

@@ -23,5 +23,7 @@ class VerifyCsrfToken extends Middleware
         "/text/*",
         "/exam/*",
         "/chat/*",
+        "/file/*",
+        "/verify/*",
     ];
 }
