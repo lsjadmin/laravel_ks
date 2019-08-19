@@ -103,4 +103,7 @@ class ApiController extends Controller
         $token=md5(substr($time.$rand,0,10));
         return $token;
     }
+    public function test(){
+        
+    }
 }

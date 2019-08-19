@@ -11,9 +11,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/WexinTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/WexinTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/A/AController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/A/AController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/A/BbController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/A/BbController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Chat/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Chat/ChatController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Email/EmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Email/EmailController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamController.php" afterDir="false" />
@@ -21,6 +23,8 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Mongo/MongoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Mongo/MongoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Note/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Note/NoteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Queue/QueueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Queue/QueueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Redis/RedisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Redis/RedisController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Restful/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Restful/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Verify/VerifyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Verify/VerifyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Weixin/WeiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Weixin/WeiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
@@ -42,7 +46,6 @@
       <change beforePath="$PROJECT_DIR$/app/Model/PriceModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/PriceModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/UserModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/loginModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/loginModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
@@ -51,7 +54,6 @@
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/jquery/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery/jquery-3.1.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/log/a.log" beforeDir="false" afterPath="$PROJECT_DIR$/public/log/a.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/chat/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat/chat.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/chat/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/chat/reg.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat/reg.blade.php" afterDir="false" />
@@ -94,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+            <state relative-caret-position="237">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="e#44#72#0#PHP" expanded="true" />
                 <element signature="e#257#1697#0#PHP" />
@@ -400,15 +402,15 @@
       <workItem from="1565850799650" duration="95000" />
       <workItem from="1565866529761" duration="2605000" />
       <workItem from="1565914839665" duration="1851000" />
-      <workItem from="1566174698295" duration="4897000" />
+      <workItem from="1566174698295" duration="5670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66116000" />
+    <option name="totallyTimeSpent" value="66889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1482602" />
@@ -903,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+        <state relative-caret-position="237">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="e#44#72#0#PHP" expanded="true" />
             <element signature="e#257#1697#0#PHP" />
