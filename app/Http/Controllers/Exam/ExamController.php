@@ -271,6 +271,51 @@ class ExamController extends Controller
         dd($a);
       
     }
+    //测试无限极分类
+    public function test01(){
+        $address=[
+            array('id'=>1,'address'=>'安徽','parent_id'=>0,'len'=>1),
+            array('id'=>2,'address'=>'江苏','parent_id'=>0,'len'=>1),
+            array('id'=>3,'address'=>'合肥','parent_id'=>1,'len'=>2),
+            array('id'=>4,'address'=>'庐阳区','parent_id'=>3,'len'=>3),
+            array('id'=>5,'address'=>'大杨镇','parent_id'=>4,'len'=>4),
+            array('id'=>6,'address'=>'南京','parent_id'=>2,'len'=>2),
+            array('id'=>7,'address'=>'玄武区','parent_id'=>6,'len'=>3),
+            array('id'=>8,'address'=>'梅园新村街道','parent_id'=>7,'len'=>4),
+            array('id'=>9,'address'=>'上海','parent_id'=>0,'len'=>1),
+            array('id'=>10,'address'=>'黄浦区','parent_id'=>9,'len'=>2),
+            array('id'=>11,'address'=>'外滩','parent_id'=>10,'len'=>3),
+            array('id'=>12,'address'=>'安庆','parent_id'=>1,'len'=>2),
+        ];
+        //家谱树
+        //$data=$this->ancestry($address,4);
+        //子孙树
+        $data=$this->aa($address);
+        echo "<pre>";print_r($data);echo"</pre>";
+    }
+    //家谱树（无限极分类）
+    function ancestry($data,$pid){
+        static $a=[];
+          foreach($data as $k=>$v){
+              if($v['id']==$pid){
+                  $a[]=$v;
+                  $this->ancestry($data,$v['parent_id']);
+              }
+          }
+          return $a;
+    }
+    //子孙树(无限极分类)
+    function aa($data,$pid=0,$len=0){
+        static $arr=[];
+        foreach($data as $k=>$v){
+            if($v['parent_id']==$pid){
+                $v['len']=$len;
+                $arr[]=$v;
+              $this->aa($data,$v['id'],$len+1);
+            }
+        }
+        return $arr;
+    }
 
 
 

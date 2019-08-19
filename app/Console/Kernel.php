@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+        \App\Console\Commands\WexinTest::class
     ];
 
     /**
@@ -25,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('Test')->everyMinute();;//每一分钟执行一次
+        $schedule->command('wexin')->everyMinute();;//每一分钟执行一次
 
     }
 

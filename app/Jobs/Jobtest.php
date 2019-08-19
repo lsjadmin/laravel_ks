@@ -10,6 +10,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Mail;
 class Jobtest implements ShouldQueue
 {
+    protected $email;
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /**
@@ -17,10 +18,10 @@ class Jobtest implements ShouldQueue
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($email)
     {
         //
-
+        $this->email=$email;
     }
 
     /**
@@ -31,10 +32,12 @@ class Jobtest implements ShouldQueue
     public function handle()
     {
         //
-        $time=date("Y-m-d H:i:s");
-        $con="测试king";
-        $data=$time.$con."\n";
-        file_put_contents("/wwwroot/laravel_ks/public/log/queue.log",$data,FILE_APPEND);
+       $time=date("Y-m-d H:i:s");
+//        $con="测试king";
+
+//        $data=$time.$con."\n";
+        $data=$time.$this->email."\n";
+        file_put_contents("/wwwroot/laravel_ks/public/log/b.log",$data,FILE_APPEND);
 //        Mail::raw('邮箱测试',function($message){
 //            $message->from('lianshijied@163.com','52Hz'); //发送人的账号和名称
 //            $message->subject('测试'); //主题
