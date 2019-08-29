@@ -18,8 +18,10 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Chat/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Chat/ChatController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Email/EmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Email/EmailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Event/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Event/EventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/File/FileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/File/FileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/File/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/File/ImageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Mongo/MongoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Mongo/MongoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Note/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Note/NoteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Queue/QueueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Queue/QueueController.php" afterDir="false" />
@@ -37,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/app/Jobs/SendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/SendEmail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/BackModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/BackModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/ChatModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ChatModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/EventModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/EventModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/GoodsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/GoodsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/KsGoodsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/KsGoodsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/MysqlModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/MysqlModel.php" afterDir="false" />
@@ -58,8 +61,10 @@
       <change beforePath="$PROJECT_DIR$/resources/views/chat/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/chat/reg.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/chat/reg.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/email/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/event/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/event/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/exam/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exam/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/file/a.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/file/a.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/file/image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/file/image.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/price/price.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/price/price.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/swoole/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/swoole/chat.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/swoole/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/swoole/index.blade.php" afterDir="false" />
@@ -96,11 +101,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Event/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="107">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
-                <element signature="e#187#249#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -109,17 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/event/add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="100" column="23" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="23" />
+            <state relative-caret-position="305">
+              <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -326,17 +321,6 @@
             <path>
               <item name="laravel_ks" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel_ks" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel_ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel_ks" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel_ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel_ks" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,6 +328,13 @@
               <item name="laravel_ks" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel_ks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel_ks" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laravel_ks" type="b2602c69:ProjectViewProjectNode" />
@@ -425,12 +416,12 @@
       <workItem from="1566635603421" duration="3017000" />
       <workItem from="1566649475778" duration="57000" />
       <workItem from="1566778201016" duration="2449000" />
-      <workItem from="1567041526830" duration="5802000" />
+      <workItem from="1567041526830" duration="8105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98323000" />
+    <option name="totallyTimeSpent" value="100626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -925,19 +916,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Event/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="107">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#46#74#0#PHP" expanded="true" />
-            <element signature="e#187#249#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/event/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        <state relative-caret-position="305">
+          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
         </state>
       </provider>
     </entry>

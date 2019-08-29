@@ -37,6 +37,7 @@
                 if(str.err==1){
                     $("#gather").html(str.set);
                     $("#end").html(str.end);
+                    $("#num").html(str.num);
                 }else{
                     alert("活动结束");
                 }
@@ -59,6 +60,7 @@
                 var name=$("#name").val();
                 var tel=$("#tel").val();
                 var num=parseInt($("#num").html());
+                console.log(num);
                 if(num <=0){
                     alert("活动报名人数结束");
                     return false;
@@ -70,10 +72,9 @@
                     function(res){
                         console.log(res);
                         var str=JSON.parse(res);
-                        if(str.err==1){
-                            $("#num").html(str.num);
-
-                        }
+                       if(res.err==1){
+                           alert("添加成功");
+                       }
                     }
                 )
             })

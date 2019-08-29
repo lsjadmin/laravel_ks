@@ -28,14 +28,13 @@ class EventController extends Controller
            'create_time'=>time()
        ];
        $create=EventModel::insert($info);
-       $count=EventModel::count();
+
 
        if($create){
-           $a=$num-$count;   //报名剩余人数。
 
            $arr=[
                'err'=>1,
-               'num'=>$a
+
            ];
            return json_encode($arr,JSON_UNESCAPED_UNICODE);
        }
@@ -47,12 +46,14 @@ class EventController extends Controller
         $time=time()+84600;
         $set=date("Y-m-d,H:i:s",$time);  //集合时间
         $end=date("Y-m-d");              //结束时间(集合前一天的时间晚上11点前)
-
+        $num=10;  //活动人数
+        $count=EventModel::count();
         if($set && $end){
             $arr=[
                 'err'=>1,
                 'set'=>$set,
-                'end'=>$end
+                'end'=>$end,
+                'num'=>$num-$count
             ];
             return json_encode($arr,JSON_UNESCAPED_UNICODE);
         }else{
