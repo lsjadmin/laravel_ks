@@ -97,11 +97,16 @@ class ApiController extends Controller
         }
 
     }
+    //验证自定义签名
+    public function sign(){
+//        $sign=file_get_contents("php://input");
+        //echo $sign;
+    }
     public function token(){
         $time=time();
         $rand=Str::random(20);
         $token=md5(substr($time.$rand,0,10));
         return $token;
     }
- 
+
 }

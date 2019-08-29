@@ -204,7 +204,7 @@ class ExamController extends Controller
     public function power(){
         echo "a";
     }
-    //测试分表
+    //测试分表(五个表 ,p_user_0 ,1,2,3,4)
     public function test(){
         $uid=Redis::incr('uid');
         echo "uid:";echo $uid;echo"</br>";
@@ -305,10 +305,10 @@ class ExamController extends Controller
           return $a;
     }
     //子孙树(无限极分类)
-    function aa($data,$pid=0,$len=0){
+    function aa($data,$id=0,$len=0){
         static $arr=[];
         foreach($data as $k=>$v){
-            if($v['parent_id']==$pid){
+            if($v['parent_id']==$id){
                 $v['len']=$len;
                 $arr[]=$v;
               $this->aa($data,$v['id'],$len+1);

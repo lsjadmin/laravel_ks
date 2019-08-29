@@ -53,8 +53,6 @@ Route::get('/mongodb/delete','Mongo\MongoController@mongodb2');
 Route::get('/mongodb/find','Mongo\MongoController@find');
 Route::get('/mongodb/update','Mongo\MongoController@update');
 Route::get('/mongodb/swoole','Mongo\MongoController@swoole');
-
-
 Route::get('/mongodb/chat','Mongo\MongoController@chat');
 //测试
 Route::get('/test/a','A\AController@a');
@@ -67,6 +65,10 @@ Route::get('/exam/partitionlist','Exam\ExamController@partitionlist');//list分�
 //切片上传
 Route::get('/file/a','File\FileController@a');
 Route::post('/file/b','File\FileController@b');
+//jq上传图片image1
+Route::get('/file/image','File\ImageController@image');
+Route::post('/file/image1','File\ImageController@image1');
+Route::get('/file/test','File\ImageController@test');
 //测试邮箱发送
 Route::get('/email','Email\EmailController@email');
 //测试redis incr
@@ -83,7 +85,7 @@ Route::post('/verify/push','Verify\VerifyController@push');  //添加
 //队列
 Route::get('/queue/test','Queue\QueueController@queue');  //数据库队列
 Route::get('/queue/redis','Queue\QueueController@queueredis');  //redis队列
-//微信
+//微信image1
 Route::get('/wei/token','Weixin\WeiController@token');  //获得token
 Route::get('/wei/mass','Weixin\WeiController@mass');  //群发
 //测试redis
@@ -93,3 +95,10 @@ Route::resource('post','Restful\PostController');
 //登陆接口
 Route::post('/api/log','Api\ApiController@log'); //对称加密
 Route::post('/api/log2','Api\ApiController@log2');//非对称加密
+Route::post('/api/sign','Api\ApiController@sign');//自定义签名
+//1907考试题测试（event）
+Route::get('/event/add','Event\EventController@EventAdd'); //添加页面
+Route::get('/event/adda','Event\EventController@EventAdda'); //添加
+Route::get('/event/time','Event\EventController@time');    //时间
+
+
